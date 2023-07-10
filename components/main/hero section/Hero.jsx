@@ -1,0 +1,116 @@
+import React from "react";
+import Image from "next/image";
+
+export default function Hero() {
+  return (
+    <>
+      <div className="flex justify-center items-center w-full">
+        <div className="relative w-full sm:px-[20px] sm:mt-[70px] md:mt-[115px] lg:mt-[150px] xl:mt-[160px]  sm:h-[14rem] md:h-[25rem] flex justify-center items-center">
+          <div className="sm:hidden lg:block">
+            <Image
+              src={"./heroSection/svg/front-end.svg"}
+              width={225}
+              height={60}
+              className="lg:w-[179px] lg:h-[73px] xl:w-[227px] xl:h-[93px]"
+            />
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+              fill="none"
+              className="mt-[-28px] ml-[205px] lg:w-[23px] lg:h-[23px] xl:w-[26px] xl:h-[26px] "
+            >
+              <circle cx="13" cy="13" r="12.5" fill="#D9E5E9" stroke="black" />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              className="mt-[33px] ml-[93px] lg:w-[26px] lg:h-[26px] xl:w-[30px] xl:h-[30px] "
+            >
+              <circle cx="15" cy="15" r="14.5" fill="white" stroke="black" />
+            </svg>
+
+            <Image
+              src={"./heroSection/svg/back-end.svg"}
+              width={202.81}
+              height={66.355}
+              className="mt-[38px] ml-[60px] lg:w-[168px] lg:h-[91px] xl:w-[198px] xl:h-[108px]"
+            />
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="33"
+              height="33"
+              viewBox="0 0 33 33"
+              fill="none"
+              className="ml-[95px] mt-[-10px] lg:w-[28px] lg:h-[29px] xl:w-[33px] xl:h-[33px] "
+            >
+              <circle
+                cx="16.5"
+                cy="16.5"
+                r="16"
+                fill="#FED0AB"
+                stroke="black"
+              />
+            </svg>
+          </div>
+
+          <div className=" inline-flex flex-col items-center sm:gap-y-[30px]  md:gap-y-[60px]">
+            <div className="flex flex-col items-center sm:gap-y-[5px] md:gap-[15px] lg:gap-[25px]">
+              <p className="text-black text-center ep sm:text-[32px] md:text-[48px] lg:text-[56px] xl:text-[64px] 2xl:text-[68px] font-[700] sm:leading-[47px] md:leading-[69px]  lg:leading-[83px] tracking-[-0.884px]">
+                Shehab Hossen👋 <br /> Web{" "}
+                <span className="gradient-text">developer</span>
+              </p>
+
+              <p className="text-black text-center wo sm:text-[12px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[22px] font-[400] sm:leading-[21px] md:leading-[33px] lg:leading-[33px] tracking-[-0.11px]">
+                I'm full-stack developer expertise in front-end development{" "}
+                <br />
+                based on Bangladesh.
+              </p>
+            </div>
+
+            <button className="w-[242px] h-[55px] inline-flex justify-center items-center gap-[11px] btn-bg">
+              <p className="text-white text-center wo sm:text-[14px] text-[18px] font-[600] ">
+                Say hello
+              </p>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="15"
+                viewBox="0 0 28 15"
+                fill="none"
+              >
+                <path
+                  d="M27.7071 8.20711C28.0976 7.81658 28.0976 7.18342 27.7071 6.7929L21.3431 0.428934C20.9526 0.0384096 20.3195 0.0384096 19.9289 0.428934C19.5384 0.819458 19.5384 1.45262 19.9289 1.84315L25.5858 7.5L19.9289 13.1569C19.5384 13.5474 19.5384 14.1805 19.9289 14.5711C20.3195 14.9616 20.9526 14.9616 21.3431 14.5711L27.7071 8.20711ZM-8.74228e-08 8.5L27 8.5L27 6.5L8.74228e-08 6.5L-8.74228e-08 8.5Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div className="sm:hidden lg:block lg:ml-[37px] xl:ml-[57px]">
+            <Image
+              src={"./heroSection/svg/line.svg"}
+              width={232}
+              height={355}
+              className="xl:mt-[-180px] xl:w-[169.282px] xl:h-[256.66px] lg:w-[107px] lg:h-[162px]"
+            />
+          </div>
+          <Image
+            src={"./heroSection/svg/design.svg"}
+            width={148}
+            height={70}
+            className="absolute ml-[680px] mt-[250px] xl:w-[144px] xl:h-[62px] lg:w-[133px] lg:h-[41px] sm:hidden lg:block"
+          />
+        </div>
+      </div>
+    </>
+  );
+}

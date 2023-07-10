@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* gloabl */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* font-family: 'Epilogue', sans-serif; */
+/* font-family: 'Work Sans', sans-serif; */
+
+.ep {
+    font-family: 'Epilogue', sans-serif;
+}
+
+.wo {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.btn-bg {
+    border-radius: 24px;
+    background: linear-gradient(118deg, #FFAF4B 0%, #F55C58 100%);
+}
+
+
+/* nav */
+.btn-layout {
+    width: 140px;
+    height: 47px;
+    flex-shrink: 0;
+}
+
+
+
+/* hero */
+
+.gradient-text {
+    background: linear-gradient(to right, #FFAF4B, #F55C58); /* Define your gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  
