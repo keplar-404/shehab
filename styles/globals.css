@@ -39,9 +39,63 @@
 /* hero */
 
 .gradient-text {
-    background: linear-gradient(to right, #FFAF4B, #F55C58); /* Define your gradient colors */
+    background: linear-gradient(to right, #FFAF4B, #F55C58);
+    /* Define your gradient colors */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
+}
 
-  
+/* skill section */
+.skill {
+    width: 162px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 31px;
+    border: 1px solid #C7B9B9;
+}
+
+.skill-title {
+    color: #FFF;
+
+    font-style: normal;
+    font-weight: 600;
+    line-height: 77px;
+    letter-spacing: -0.884px;
+}
+
+.skill-text {
+    color: #FFF;
+
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+
+/* about me */
+
+
+.ab-title{
+    color: #000;
+text-align: center;
+font-style: normal;
+font-weight: 600;
+line-height: 74px; /* 108.824% */
+letter-spacing: -1.02px;
+}
+.ab-text{
+    color: #000;
+text-align: center;
+font-style: normal;
+font-weight: 400;
+line-height: 25.2px; /* 140% */
+}
+
+
+/* featured */
+.fe{
+    font-weight: 600;
+    line-height: 74px; /* 108.824% */
+    letter-spacing: -1.02px;
+}

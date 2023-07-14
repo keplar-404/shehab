@@ -111,6 +111,12 @@ export default function Hero() {
           />
         </div>
       </div>
+
+      <div className="mt-[92px] flex justify-center items-center">
+        <div className="w-[1250px] flex flex-col items-end">
+          <Image src={"./rec.svg"} width={330} height={57.835} />
+        </div>
+      </div>
     </>
   );
 }
