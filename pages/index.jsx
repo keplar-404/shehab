@@ -4,6 +4,9 @@ import Nav from "@/components/navbar/Nav";
 import About from "@/components/main/AboutMe";
 import Head from "next/head";
 import Project from "@/components/main/Project";
+import Playgame from "@/components/main/Playgame";
+import CSS from "@/components/main/CSS";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -24,9 +27,13 @@ export default function Home() {
         <SkillSection />
         <About/>
         <Project/>
+        <Playgame/>
+        <CSS/>
       </main>
 
-      <footer></footer>
+      <footer className="bg-black">
+        <Footer/>
+      </footer>
     </>
   );
 }

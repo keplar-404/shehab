@@ -27,7 +27,7 @@ export default function Project() {
   return (
     <>
       <div className="text-white mt-[106px] bg-black w-full flex justify-center items-center py-[126px] ">
-        <div className="flex flex-col gap-y-[141px] sm:w-[289px] md:w-[684.633px] lg:w-[899px] xl:w-[1135px] 2xl:w-[1264px]">
+        <div className="flex flex-col sm:gap-y-[75px] md:gap-y-[141px] sm:w-[289px] md:w-[684.633px] lg:w-[899px] xl:w-[1135px] 2xl:w-[1264px]">
           <h1 className="ep fe sm:text-[33px] md:text-[48px] lg:text-[58px] xl:text-[64px] 2xl:text-[68px] sm:text-center md:text-left">
             Featured projects
           </h1>

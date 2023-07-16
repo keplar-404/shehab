@@ -75,7 +75,7 @@ export default function Hero() {
               </p>
             </div>
 
-            <button className="w-[242px] h-[55px] inline-flex justify-center items-center gap-[11px] btn-bg">
+            <button className="group transition-all duration-500 w-[242px] h-[55px] inline-flex justify-center items-center btn-bg">
               <p className="text-white text-center wo sm:text-[14px] text-[18px] font-[600] ">
                 Say hello
               </p>
@@ -86,6 +86,7 @@ export default function Hero() {
                 height="15"
                 viewBox="0 0 28 15"
                 fill="none"
+                className="ml-[11px] transition-all duration-500 group-hover:ml-[18px]"
               >
                 <path
                   d="M27.7071 8.20711C28.0976 7.81658 28.0976 7.18342 27.7071 6.7929L21.3431 0.428934C20.9526 0.0384096 20.3195 0.0384096 19.9289 0.428934C19.5384 0.819458 19.5384 1.45262 19.9289 1.84315L25.5858 7.5L19.9289 13.1569C19.5384 13.5474 19.5384 14.1805 19.9289 14.5711C20.3195 14.9616 20.9526 14.9616 21.3431 14.5711L27.7071 8.20711ZM-8.74228e-08 8.5L27 8.5L27 6.5L8.74228e-08 6.5L-8.74228e-08 8.5Z"
@@ -112,8 +113,8 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="mt-[92px] flex justify-center items-center">
-        <div className="w-[1250px] flex flex-col items-end">
+      <div className=" mt-[92px] flex justify-center items-center">
+        <div className="sm:w-[289px] md:w-[684.633px] lg:w-[899px] xl:w-[1135px] 2xl:w-[1264px] flex flex-col sm:items-center md:items-end">
           <Image src={"./rec.svg"} width={330} height={57.835} />
         </div>
       </div>
