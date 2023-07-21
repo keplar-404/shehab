@@ -57,7 +57,7 @@ function Nav() {
           >
             Work
           </a>
-          <button className="btn-layout btn-bg-mb hover:text-[17px] transition-all duration-500">
+          <button className="btn-layout btn-bg-mb transition-all duration-500">
             Resume
           </button>
           <Image
@@ -101,7 +101,7 @@ function Nav() {
             >
               Work
             </a>
-            <button className="btn-layout btn-bg-lg hover:text-[17px] transition-all duration-500">
+            <button className="btn-layout btn-bg-lg  transition-all duration-500">
               Resume
             </button>
           </div>

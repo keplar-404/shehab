@@ -15,11 +15,17 @@ export default function Document() {
           rel="stylesheet"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com"  crossOrigin="true" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
           rel="stylesheet"
         ></link>
+        <script src="dist/smooth-scrollbar.js"></script>
+        <script src="dist/plugins/overscroll.js"></script>
       </Head>
       <body>
         <Main />
