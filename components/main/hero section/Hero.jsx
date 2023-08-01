@@ -1,18 +1,62 @@
-import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 
 export default function Hero() {
+  const randomPosition = () => Math.trunc(Math.random() * 80);
+  const animationVariant = {
+    initial: {
+      opacity: 0,
+      y: randomPosition(),
+      x: randomPosition(),
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      x: 0,
+      transition: {
+        duration: 1,
+      },
+    },
+  };
+  const draw = {
+    hidden: { pathLength: 0, opacity: 0 },
+    visible: (i) => {
+      const delay = 1 + i * 0.5;
+      return {
+        pathLength: 1,
+        opacity: 1,
+        transition: {
+          pathLength: { delay, type: "spring", duration: 1.5, bounce: 0 },
+          opacity: { delay, duration: 0.01 },
+        },
+      };
+    },
+  };
+
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once:true });
+
   return (
     <>
       <div className="flex justify-center items-center w-full">
         <div className="relative w-full sm:px-[20px] sm:mt-[70px] md:mt-[115px] lg:mt-[150px] xl:mt-[160px]  sm:h-[14rem] md:h-[25rem] flex justify-center items-center">
           <div className="sm:hidden lg:block">
-            <Image
-              src={"./heroSection/svg/front-end.svg"}
-              width={225}
-              height={60}
-              className="lg:w-[179px] lg:h-[73px] xl:w-[227px] xl:h-[93px]"
-            />
+            <motion.div
+              variants={animationVariant}
+              initial="initial"
+              animate="animate"
+              // transition="transition"
+              // transition={{  }}
+            >
+              <Image
+                src={"./heroSection/svg/front-end.svg"}
+                width={225}
+                height={60}
+                className="lg:w-[179px] lg:h-[73px] xl:w-[227px] xl:h-[93px]"
+              />
+            </motion.div>
 
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -35,13 +79,19 @@ export default function Hero() {
             >
               <circle cx="15" cy="15" r="14.5" fill="white" stroke="black" />
             </svg>
-
-            <Image
-              src={"./heroSection/svg/back-end.svg"}
-              width={202.81}
-              height={66.355}
-              className="mt-[38px] ml-[60px] lg:w-[168px] lg:h-[91px] xl:w-[198px] xl:h-[108px]"
-            />
+            <motion.div
+              variants={animationVariant}
+              initial="initial"
+              animate="animate"
+              transition="transition"
+            >
+              <Image
+                src={"./heroSection/svg/back-end.svg"}
+                width={202.81}
+                height={66.355}
+                className="mt-[38px] ml-[60px] lg:w-[168px] lg:h-[91px] xl:w-[198px] xl:h-[108px]"
+              />
+            </motion.div>
 
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -62,9 +112,14 @@ export default function Hero() {
           </div>
 
           <div className=" inline-flex flex-col items-center sm:gap-y-[30px]  md:gap-y-[60px]">
-            <div className="flex flex-col items-center sm:gap-y-[5px] md:gap-[15px] lg:gap-[25px]">
+            <motion.div
+              className="flex flex-col items-center sm:gap-y-[5px] md:gap-[15px] lg:gap-[25px]"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+            >
               <p className="text-black text-center ep sm:text-[32px] md:text-[48px] lg:text-[56px] xl:text-[64px] 2xl:text-[68px] font-[700] sm:leading-[47px] md:leading-[69px]  lg:leading-[83px] tracking-[-0.884px]">
-                Shehab Hossen👋 <br /> Web{" "}
+                Shehab Hossen<span className="wave">👋</span> <br /> Web{" "}
                 <span className="gradient-text">developer</span>
               </p>
 
@@ -73,7 +128,7 @@ export default function Hero() {
                 <br />
                 based on Bangladesh.
               </p>
-            </div>
+            </motion.div>
 
             <button className="group transition-all duration-500 w-[242px] h-[55px] inline-flex justify-center items-center btn-bg">
               <p className="text-white text-center wo sm:text-[14px] text-[18px] font-[600] ">
@@ -96,14 +151,19 @@ export default function Hero() {
             </button>
           </div>
 
-          <div className="sm:hidden lg:block lg:ml-[37px] xl:ml-[57px]">
+          <motion.div
+            initial={{ opacity: [0, 0], y: 80 }}
+            animate={{ opacity: [0, 1], y: 0 }}
+            transition={{ duration: 1 }}
+            className="sm:hidden lg:block lg:ml-[37px] xl:ml-[57px]"
+          >
             <Image
               src={"./heroSection/svg/line.svg"}
               width={232}
               height={355}
               className="xl:mt-[-180px] xl:w-[169.282px] xl:h-[256.66px] lg:w-[107px] lg:h-[162px]"
             />
-          </div>
+          </motion.div>
           <Image
             src={"./heroSection/svg/design.svg"}
             width={148}
@@ -115,7 +175,172 @@ export default function Hero() {
 
       <div className=" mt-[92px] flex justify-center items-center">
         <div className="sm:w-[289px] md:w-[684.633px] lg:w-[899px] xl:w-[1135px] 2xl:w-[1264px] flex flex-col sm:items-center md:items-end">
-          <Image src={"./rec.svg"} width={330} height={57.835} />
+          <motion.svg
+            ref={ref}
+            initial="hidden"
+            animate={isInView ? "visible" : ""}
+            className="mt-[-50px]"
+            width="330"
+            height="58"
+            viewBox="0 0 330 58"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <motion.rect
+              variants={draw}
+              custom={1}
+              x="0.25"
+              y="0.25"
+              width="82"
+              height="13.9588"
+              rx="2.75"
+              stroke="black"
+              stroke-width="0.5"
+            />
+            <motion.rect
+              variants={draw}
+              custom={2}
+              x="82.75"
+              y="0.25"
+              width="82"
+              height="13.9588"
+              rx="2.75"
+              stroke="black"
+              stroke-width="0.5"
+            />
+            <motion.rect
+              variants={draw}
+              custom={2.5}
+              x="82.75"
+              y="14.7088"
+              width="82"
+              height="13.9588"
+              rx="2.75"
+              stroke="black"
+              stroke-width="0.5"
+            />
+            <motion.rect
+              variants={draw}
+              custom={3}
+              x="82.75"
+              y="29.1675"
+              width="82"
+              height="13.9588"
+              rx="2.75"
+              stroke="black"
+              stroke-width="0.5"
+            />
+            <motion.rect
+              variants={draw}
+              custom={3.5}
+              x="82.75"
+              y="43.6263"
+              width="82"
+              height="13.9588"
+              rx="2.75"
+              stroke="black"
+              stroke-width="0.5"
+            />
+            <motion.rect
+              variants={draw}
+              custom={4}
+              x="165.25"
+              y="0.25"
+              width="82"
+              height="13.9588"
+              rx="2.75"
+              stroke="black"
+              stroke-width="0.5"
+            />
+            <motion.rect
+              variants={draw}
+              custom={4.5}
+              x="165.25"
+              y="14.7088"
+              width="82"
+              height="13.9588"
+              rx="2.75"
+              stroke="black"
+              stroke-width="0.5"
+            />
+            <motion.rect
+              variants={draw}
+              custom={2}
+              x="165.25"
+              y="29.1675"
+              width="82"
+              height="13.9588"
+              rx="2.75"
+              stroke="black"
+              stroke-width="0.5"
+            />
+            <motion.rect
+              variants={draw}
+              custom={3}
+              x="247.75"
+              y="0.25"
+              width="82"
+              height="13.9588"
+              rx="2.75"
+              stroke="black"
+              stroke-width="0.5"
+            />
+            <motion.rect
+              variants={draw}
+              custom={5}
+              x="247.75"
+              y="14.7088"
+              width="82"
+              height="13.9588"
+              rx="2.75"
+              stroke="black"
+              stroke-width="0.5"
+            />
+            <motion.rect
+              variants={draw}
+              custom={2.5}
+              x="247.75"
+              y="29.1675"
+              width="82"
+              height="13.9588"
+              rx="2.75"
+              stroke="black"
+              stroke-width="0.5"
+            />
+            <motion.rect
+              variants={draw}
+              custom={3.5}
+              x="247.75"
+              y="43.6263"
+              width="82"
+              height="13.9588"
+              rx="2.75"
+              stroke="black"
+              stroke-width="0.5"
+            />
+            <motion.rect
+              variants={draw}
+              custom={5}
+              x="0.25"
+              y="29.1675"
+              width="82"
+              height="13.9588"
+              rx="2.75"
+              stroke="black"
+              stroke-width="0.5"
+            />
+            <motion.rect
+              variants={draw}
+              custom={3}
+              x="0.25"
+              y="43.6263"
+              width="82"
+              height="13.9588"
+              rx="2.75"
+              stroke="black"
+              stroke-width="0.5"
+            />
+          </motion.svg>
         </div>
       </div>
     </>

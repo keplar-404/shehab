@@ -24,8 +24,12 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
           rel="stylesheet"
         ></link>
-        <script src="dist/smooth-scrollbar.js"></script>
-        <script src="dist/plugins/overscroll.js"></script>
+
+
+
+        
+         {/* <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> */}
+         {/* <script src="https://unpkg.com/aos@next/dist/aos.js"></script> */}
       </Head>
       <body>
         <Main />

@@ -30,10 +30,12 @@
     border-radius: 24px;
     background: linear-gradient(118deg, #FFAF4B 0%, #F55C58 100%);
 }
+
 .btn-bg-lg {
     border-radius: 24px;
     background: linear-gradient(118deg, #FFAF4B 0%, #F55C58 100%);
 }
+
 .btn-bg-mb {
     border-radius: 24px;
     background: linear-gradient(118deg, #FFAF4B 0%, #F55C58 100%);
@@ -45,12 +47,14 @@
     box-shadow: 0px 0px 20px 3px #FEA64D;
 
 }
+
 .btn-bg-mb:hover {
     border-radius: 24px;
     background: linear-gradient(118deg, #FFAF4B 0%, #F55C58 100%);
     box-shadow: 0px 0px 20px 3px #FEA64D;
 
 }
+
 .btn-bg-lg:hover {
     border-radius: 24px;
     background: linear-gradient(118deg, #FFAF4B 0%, #F55C58 100%);
@@ -103,6 +107,56 @@
     line-height: normal;
 
 }
+
+
+.wave {
+    animation-name: wave-animation;
+    /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;
+    /* Change to speed up or slow down */
+    animation-iteration-count: infinite;
+    /* Never stop waving :) */
+    transform-origin: 70% 70%;
+    /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
 
 
 /* about me */
@@ -165,3 +219,30 @@
     box-shadow: 8px 8px 0px 0px rgba(155, 155, 155, 0.48);
     color: #000;
 }
+
+
+
+.clip {
+    clip-path: circle(20% at 50% 50%);
+}
+
+.fullscreen-red {
+    display: flex;
+    /* Use flexbox */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    width: 100vw;
+    /* 100% of the viewport width */
+    height: 100vh;
+    /* 100% of the viewport height */
+    background: radial-gradient(circle, transparent 50%, #E1E8EA 100px);
+    /* Radial gradient with transparent circle */
+}
+
+.clip {
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+}
+
