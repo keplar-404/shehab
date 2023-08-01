@@ -27,6 +27,8 @@ export default function Index() {
         <link rel="icon" href="/sh.ico" />
       </Head>
 
+      {/* <div className="w-full h-[5rem] fixed z-[999] sm:bg-red-400 md:bg-slate-400 lg:bg-yellow-200 xl:bg-purple-400 2xl:bg-black"></div> */}
+
       <div id="my-scrollbar" className="w-full h-fit">
         <nav className="bg-[#E1E8EA]">
           <Nav />
@@ -36,7 +38,7 @@ export default function Index() {
           <Hero />
           <SkillSection />
           <About />
-          <ProjectUpAnimation/>
+          <ProjectUpAnimation />
           <Project />
           <Playgame />
           <CSS />
