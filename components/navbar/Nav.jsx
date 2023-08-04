@@ -34,30 +34,6 @@ function Nav() {
 
       <div className={`${display} absolute z-20 overflow-hidden w-full h-full`}>
         <div className=" w-screen h-screen bg-black flex flex-col justify-center items-center text-white gap-y-8 wo font-medium text-[16px]">
-          <a
-            href="#"
-            className="hover:text-[#FFAF4B] transition-all duration-300"
-          >
-            Home
-          </a>
-          <a
-            href="#"
-            className="hover:text-[#FFAF4B] transition-all duration-300"
-          >
-            Skill
-          </a>
-          <a
-            href="#"
-            className="hover:text-[#FFAF4B] transition-all duration-300"
-          >
-            About
-          </a>
-          <a
-            href="#"
-            className="hover:text-[#FFAF4B] transition-all duration-300"
-          >
-            Work
-          </a>
           <button className="btn-layout btn-bg-mb transition-all duration-500">
             Resume
           </button>
@@ -79,30 +55,6 @@ function Nav() {
           </div>
 
           <div className="sm:hidden lg:flex flex-row justify-center items-center wo font-medium text-[16px] gap-x-[24px]">
-            <a
-              href="#"
-              className="hover:text-[#FFAF4B] transition-all duration-300"
-            >
-              Home
-            </a>
-            <a
-              href="#"
-              className="hover:text-[#FFAF4B] transition-all duration-300"
-            >
-              Skill
-            </a>
-            <a
-              href="#"
-              className="hover:text-[#FFAF4B] transition-all duration-300"
-            >
-              About
-            </a>
-            <a
-              href="#"
-              className="hover:text-[#FFAF4B] transition-all duration-300"
-            >
-              Work
-            </a>
             <button className="btn-layout btn-bg-lg  transition-all duration-500">
               Resume
             </button>

@@ -11,7 +11,7 @@ export default function Project() {
       dev1: "Design",
       dev2: "Development",
       img: "/skillspring.png",
-      blurImg: "/skillspring1.png",
+      blurImg: "/skillspring1.png"
     },
     {
       id: 2,
