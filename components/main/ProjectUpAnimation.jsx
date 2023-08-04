@@ -52,9 +52,10 @@ export default function ProjectUpAnimation() {
 
   const style = useMotionTemplate`radial-gradient(circle, transparent ${percentDiv}, #E1E8EA 0%)`;
 
-  useMotionValueEvent(titleOpacity, "change", (latest) => {
-    console.log(latest);
-  });
+  // check for motion value
+  // useMotionValueEvent(titleOpacity, "change", (latest) => {
+  //   console.log(latest);
+  // });
   return (
     <>
       <div
@@ -64,8 +65,8 @@ export default function ProjectUpAnimation() {
         <motion.div
           className="sticky top-0  w-full h-screen z-[20]"
           style={{ background: style }}
-          backgroundSize={percentDiv}
-          backgroundPosition={percentDiv}
+          // backgroundSize={percentDiv}
+          // backgroundPosition={percentDiv}
         ></motion.div>
 
         <motion.div

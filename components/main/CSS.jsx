@@ -1,19 +1,32 @@
-import React from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 export default function CSS() {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "0 0"],
+  });
+  const hrWidth = useTransform(scrollYProgress, [0, 0.8], ["0%", "100%"])
+  const hrWidth2Md = useTransform(scrollYProgress, [0, 0.8], ["0px", "490px"])
+  const hrWidth2Sm = useTransform(scrollYProgress, [0, 0.8], ["0px", "184px"])
+  const hrHeight3Sm = useTransform(scrollYProgress, [0, 0.8], ["0px", "150px"])
+  const hrHeight3Md = useTransform(scrollYProgress, [0, 0.8], ["0px", "270px"])
   return (
     <>
-      <div className="w-full mt-[106px]">
-        <div className="w-full justify-center items-center flex">
-          <hr className="bg-black w-full h-[2px]" />
+      <div ref={ref} className="w-full mt-[290px]">
+        <div  className="w-full justify-center items-center flex">
+          <motion.hr style={{ width: hrWidth }} className="bg-black h-[2px]" />
           <h1 className="bg-[#E1E8EA] ep absolute  fe sm:text-[33px] md:text-[48px] lg:text-[58px] xl:text-[64px] 2xl:text-[68px] sm:text-center md:text-left">
             <span className="gradient-text">CSS</span> is fun
           </h1>
         </div>
 
         <div className="sm:mt-[40px] md:mt-[63px] flex flex-col justify-center items-center">
-          <hr className="bg-black sm:w-[184px] md:w-[429px] h-[2px]" />
-          <hr className="bg-black w-[1px] sm:h-[150px] md:h-[270px] rotate-180" />
+          <motion.hr style={{ width: hrWidth2Md }} className="bg-black sm:hidden md:block h-[2px]" />
+          <motion.hr style={{ width: hrWidth2Sm }} className="bg-black sm:block md:hidden h-[2px]" />
+          <motion.hr style={{ height:hrHeight3Sm }} className="bg-black w-[1px] sm:block md:hidden rotate-180" />
+          <motion.hr style={{ height:hrHeight3Md }} className="bg-black w-[1px] sm:hidden md:block rotate-180" />
         </div>
 
         <div className="flex justify-center items-center w-full">

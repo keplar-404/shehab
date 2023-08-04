@@ -26,6 +26,7 @@ function Nav() {
           src={"/backtotop.svg"}
           width={62}
           height={62}
+          alt="logo"
           className="h-auto sm:w-[35px] 2xl:w-[45px] sm:right-3 md:right-7 lg:right-8 2xl:right-12  fixed bottom-6 cursor-pointer hidden"
           id="back"
         />
@@ -64,6 +65,7 @@ function Nav() {
             src={"./cross1.svg"}
             width={40}
             height={40}
+            alt="logo"
             className="cursor-pointer"
             onClick={() => setDisplay("hidden")}
           />
@@ -110,6 +112,7 @@ function Nav() {
             src={"./hamber.svg"}
             width={35}
             height={12}
+            alt="logo"
             className="sm:block lg:hidden cursor-pointer"
             onClick={() => setDisplay("block")}
           />

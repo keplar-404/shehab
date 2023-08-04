@@ -31,6 +31,7 @@ export default function About() {
               src={"./about.svg"}
               width={286.004}
               height={309.31}
+              alt="img"
               className="xl:ml-[84px] 2xl:ml-0"
             />
           </motion.div>
@@ -62,6 +63,7 @@ export default function About() {
               src={"./about.svg"}
               width={286.004}
               height={309.31}
+              alt="img"
               className="sm:mt-0 xl:mt-[-66px] rotate-180"
             />
           </motion.div>

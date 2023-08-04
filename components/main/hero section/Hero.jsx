@@ -4,12 +4,11 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 export default function Hero() {
-  const randomPosition = () => Math.trunc(Math.random() * 80);
   const animationVariant = {
     initial: {
       opacity: 0,
-      y: randomPosition(),
-      x: randomPosition(),
+      y: 64,
+      x: 64,
     },
     animate: {
       opacity: 1,
@@ -47,13 +46,12 @@ export default function Hero() {
               variants={animationVariant}
               initial="initial"
               animate="animate"
-              // transition="transition"
-              // transition={{  }}
             >
               <Image
                 src={"./heroSection/svg/front-end.svg"}
                 width={225}
                 height={60}
+                alt="img"
                 className="lg:w-[179px] lg:h-[73px] xl:w-[227px] xl:h-[93px]"
               />
             </motion.div>
@@ -89,6 +87,7 @@ export default function Hero() {
                 src={"./heroSection/svg/back-end.svg"}
                 width={202.81}
                 height={66.355}
+                alt="image"
                 className="mt-[38px] ml-[60px] lg:w-[168px] lg:h-[91px] xl:w-[198px] xl:h-[108px]"
               />
             </motion.div>
@@ -161,6 +160,7 @@ export default function Hero() {
               src={"./heroSection/svg/line.svg"}
               width={232}
               height={355}
+              alt="image"
               className="xl:mt-[-180px] xl:w-[169.282px] xl:h-[256.66px] lg:w-[107px] lg:h-[162px]"
             />
           </motion.div>
@@ -168,6 +168,7 @@ export default function Hero() {
             src={"./heroSection/svg/design.svg"}
             width={148}
             height={70}
+            alt="image"
             className="absolute ml-[680px] mt-[250px] xl:w-[144px] xl:h-[62px] lg:w-[133px] lg:h-[41px] sm:hidden lg:block"
           />
         </div>
@@ -195,7 +196,7 @@ export default function Hero() {
               height="13.9588"
               rx="2.75"
               stroke="black"
-              stroke-width="0.5"
+              strokeWidth="0.5"
             />
             <motion.rect
               variants={draw}
@@ -206,7 +207,7 @@ export default function Hero() {
               height="13.9588"
               rx="2.75"
               stroke="black"
-              stroke-width="0.5"
+              strokeWidth="0.5"
             />
             <motion.rect
               variants={draw}
@@ -217,7 +218,7 @@ export default function Hero() {
               height="13.9588"
               rx="2.75"
               stroke="black"
-              stroke-width="0.5"
+              strokeWidth="0.5"
             />
             <motion.rect
               variants={draw}
@@ -228,7 +229,7 @@ export default function Hero() {
               height="13.9588"
               rx="2.75"
               stroke="black"
-              stroke-width="0.5"
+              strokeWidth="0.5"
             />
             <motion.rect
               variants={draw}
@@ -239,7 +240,7 @@ export default function Hero() {
               height="13.9588"
               rx="2.75"
               stroke="black"
-              stroke-width="0.5"
+              strokeWidth="0.5"
             />
             <motion.rect
               variants={draw}
@@ -250,7 +251,7 @@ export default function Hero() {
               height="13.9588"
               rx="2.75"
               stroke="black"
-              stroke-width="0.5"
+              strokeWidth="0.5"
             />
             <motion.rect
               variants={draw}
@@ -261,7 +262,7 @@ export default function Hero() {
               height="13.9588"
               rx="2.75"
               stroke="black"
-              stroke-width="0.5"
+              strokeWidth="0.5"
             />
             <motion.rect
               variants={draw}
@@ -272,7 +273,7 @@ export default function Hero() {
               height="13.9588"
               rx="2.75"
               stroke="black"
-              stroke-width="0.5"
+              strokeWidth="0.5"
             />
             <motion.rect
               variants={draw}
@@ -283,7 +284,7 @@ export default function Hero() {
               height="13.9588"
               rx="2.75"
               stroke="black"
-              stroke-width="0.5"
+              strokeWidth="0.5"
             />
             <motion.rect
               variants={draw}
@@ -294,7 +295,7 @@ export default function Hero() {
               height="13.9588"
               rx="2.75"
               stroke="black"
-              stroke-width="0.5"
+              strokeWidth="0.5"
             />
             <motion.rect
               variants={draw}
@@ -305,7 +306,7 @@ export default function Hero() {
               height="13.9588"
               rx="2.75"
               stroke="black"
-              stroke-width="0.5"
+              strokeWidth="0.5"
             />
             <motion.rect
               variants={draw}
@@ -316,7 +317,7 @@ export default function Hero() {
               height="13.9588"
               rx="2.75"
               stroke="black"
-              stroke-width="0.5"
+              strokeWidth="0.5"
             />
             <motion.rect
               variants={draw}
@@ -327,7 +328,7 @@ export default function Hero() {
               height="13.9588"
               rx="2.75"
               stroke="black"
-              stroke-width="0.5"
+              strokeWidth="0.5"
             />
             <motion.rect
               variants={draw}
@@ -338,7 +339,7 @@ export default function Hero() {
               height="13.9588"
               rx="2.75"
               stroke="black"
-              stroke-width="0.5"
+              strokeWidth="0.5"
             />
           </motion.svg>
         </div>
