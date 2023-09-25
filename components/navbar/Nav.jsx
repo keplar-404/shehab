@@ -1,27 +1,27 @@
 import React from "react";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 function Nav() {
   const [display, setDisplay] = useState("hidden");
 
-  useEffect(() => {
-    const toBackBtn = document.querySelector("#back");
-    window.addEventListener("scroll", function () {
-      // console.log(window.scrollY);
+  // useEffect(() => {
+  //   const toBackBtn = document.querySelector("#back");
+  //   window.addEventListener("scroll", function () {
+  //     // console.log(window.scrollY);
 
-      if (window.scrollY > 100) {
-        toBackBtn.classList.remove("hidden");
-        toBackBtn.classList.add("block");
-      } else {
-        toBackBtn.classList.remove("block");
-        toBackBtn.classList.add("hidden");
-      }
-    });
-  }, []);
+  //     if (window.scrollY > 100) {
+  //       toBackBtn.classList.remove("hidden");
+  //       toBackBtn.classList.add("block");
+  //     } else {
+  //       toBackBtn.classList.remove("block");
+  //       toBackBtn.classList.add("hidden");
+  //     }
+  //   });
+  // }, []);
 
   return (
     <>
-      <div className="absolute">
+      {/* <div className="absolute">
         <Image
           src={"/backtotop.svg"}
           width={62}
@@ -30,7 +30,7 @@ function Nav() {
           className="h-auto sm:w-[35px] 2xl:w-[45px] sm:right-3 md:right-7 lg:right-8 2xl:right-12  fixed bottom-6 cursor-pointer hidden"
           id="back"
         />
-      </div>
+      </div> */}
 
       <div className={`${display} absolute z-20 overflow-hidden w-full h-full`}>
         <div className=" w-screen h-screen bg-black flex flex-col justify-center items-center text-white gap-y-8 wo font-medium text-[16px]">

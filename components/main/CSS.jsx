@@ -11,7 +11,6 @@ export default function CSS() {
   const hrWidth2Md = useTransform(scrollYProgress, [0, 0.8], ["0px", "490px"])
   const hrWidth2Sm = useTransform(scrollYProgress, [0, 0.8], ["0px", "184px"])
   const hrHeight3Sm = useTransform(scrollYProgress, [0, 0.8], ["0px", "150px"])
-  const hrHeight3Md = useTransform(scrollYProgress, [0, 0.8], ["0px", "270px"])
   return (
     <>
       <div ref={ref} className="w-full mt-[290px]">
@@ -26,7 +25,7 @@ export default function CSS() {
           <motion.hr style={{ width: hrWidth2Md }} className="bg-black sm:hidden md:block h-[2px]" />
           <motion.hr style={{ width: hrWidth2Sm }} className="bg-black sm:block md:hidden h-[2px]" />
           <motion.hr style={{ height:hrHeight3Sm }} className="bg-black w-[1px] sm:block md:hidden rotate-180" />
-          <motion.hr style={{ height:hrHeight3Md }} className="bg-black w-[1px] sm:hidden md:block rotate-180" />
+          <hr className="bg-black h-[270px] w-[1px] sm:hidden md:block rotate-180" />
         </div>
 
         <div className="flex justify-center items-center w-full">

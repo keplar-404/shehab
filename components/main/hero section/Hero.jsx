@@ -35,7 +35,21 @@ export default function Hero() {
   };
 
   const ref = useRef(null);
-  const isInView = useInView(ref, { once:true });
+  const isInView = useInView(ref, { once: true });
+  const mailSend = () => {
+    const emailAddress = "shehabhossen76.services@gmail.com"; // Replace with your email address
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      // If the user is on a mobile device, open the Gmail app
+      window.location.href = `mailto:${emailAddress}`;
+    } else {
+      // If the user is on a desktop, open the default email client in a new tab
+      window.open(`mailto:${emailAddress}`);
+    }
+  };
 
   return (
     <>
@@ -123,14 +137,17 @@ export default function Hero() {
               </p>
 
               <p className="text-black text-center wo sm:text-[12px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[22px] font-[400] sm:leading-[21px] md:leading-[33px] lg:leading-[33px] tracking-[-0.11px]">
-                I'm full-stack developer expertise in front-end development{" "}
+                I'm a full-stack developer expertise in front-end development{" "}
                 <br />
                 based on Bangladesh.
               </p>
             </motion.div>
 
             <button className="group transition-all duration-500 w-[242px] h-[55px] inline-flex justify-center items-center btn-bg">
-              <p className="text-white text-center wo sm:text-[14px] text-[18px] font-[600] ">
+              <p
+                onClick={mailSend}
+                className="text-white text-center wo sm:text-[14px] text-[18px] font-[600] "
+              >
                 Say hello
               </p>
 

@@ -30,7 +30,7 @@ export default function Index() {
         <ProjectUpAnimation />
         <Project />
         <Playgame />
-        <CSS />
+        {/* <CSS /> */}
       </main>
 
       <footer className="bg-black">
