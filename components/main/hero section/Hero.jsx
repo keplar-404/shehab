@@ -143,14 +143,11 @@ export default function Hero() {
               </p>
             </motion.div>
 
-            <button className="group transition-all duration-500 w-[242px] h-[55px] inline-flex justify-center items-center btn-bg">
-              <p
-                onClick={mailSend}
-                className="text-white text-center wo sm:text-[14px] text-[18px] font-[600] "
-              >
-                Say hello
-              </p>
-
+            <button
+              className="group transition-all duration-500 w-[242px] h-[55px] inline-flex justify-center items-center btn-bg text-white text-center wo sm:text-[14px] text-[18px] font-[600]"
+              onClick={mailSend}
+            >
+              Say hello
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"

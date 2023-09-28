@@ -108,14 +108,14 @@ export default function Footer() {
             <div className="w-full flex justify-center items-center sm:flex-col md:flex-row  sm:h-[350px] md:h-[200px]">
               <div className="flex flex-col justify-center items-center  sm:w-full md:w-1/2 md:h-full sm:border-r-0 md:border-r-[1px] sm:border-black md:border-white">
                 <p className="wo sm:text-[18px] text-[22px] font-normal text-center">
-                  shehabhossen76.services@gmail.com
+                shehubhossen@gmail.com
                 </p>
                 <p className="wo sm:text-[18px] text-[22px] font-normal text-center mt-[14px]">
-                  01647153119
+                  0164-7153119
                 </p>
               </div>
               <div className="sm:w-full md:w-1/2 flex justify-center items-center relative sm:mt-9">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.512798449663!2d90.80551557520998!3d22.96816327921191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3754c24720dd30fd%3A0xd3397543482e3f0!2sDalal%20Bazar!5e0!3m2!1sen!2sbd!4v1695667967792!5m2!1sen!2sbd" width="600" height="450" style={{ border: "0" }} className="rounded-[0.5rem] h-[10rem] w-[60%]" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.512798449663!2d90.80551557520998!3d22.96816327921191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3754c24720dd30fd%3A0xd3397543482e3f0!2sDalal%20Bazar!5e0!3m2!1sen!2sbd!4v1695667967792!5m2!1sen!2sbd" width="600" height="450" style={{ border: "0" }} className="rounded-[0.5rem] h-[10rem] w-[60%]" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
           </div>
