@@ -34,9 +34,15 @@ function Nav() {
 
       <div className={`${display} absolute z-20 overflow-hidden w-full h-full`}>
         <div className=" w-screen h-screen bg-black flex flex-col justify-center items-center text-white gap-y-8 wo font-medium text-[16px]">
-          <button className="btn-layout btn-bg-mb transition-all duration-500">
-            Resume
-          </button>
+          <a
+            className=""
+            href="https://drive.google.com/file/d/1O6XG3hh-qYuhiy0tYQotyI3Lyprv97LV/view?usp=drive_link"
+            target="_blank"
+          >
+            <button className="btn-layout btn-bg-mb transition-all duration-500">
+              Resume
+            </button>
+          </a>
           <Image
             src={"./cross1.svg"}
             width={40}
@@ -55,9 +61,14 @@ function Nav() {
           </div>
 
           <div className="sm:hidden lg:flex flex-row justify-center items-center wo font-medium text-[16px] gap-x-[24px]">
-            <button className="btn-layout btn-bg-lg  transition-all duration-500">
-              Resume
-            </button>
+            <a
+              target="_blank"
+              href="https://drive.google.com/file/d/1O6XG3hh-qYuhiy0tYQotyI3Lyprv97LV/view?usp=drive_link"
+            >
+              <button className="btn-layout btn-bg-lg  transition-all duration-500">
+                Resume
+              </button>
+            </a>
           </div>
 
           <Image
