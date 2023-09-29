@@ -48,7 +48,7 @@ export default function Footer() {
   };
 
   const mailSend = () => {
-    const emailAddress = "shehabhossen76.services@gmail.com"; // Replace with your email address
+    const emailAddress = "shehubhossen@gmail.com"; // Replace with your email address
     if (
       /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
         navigator.userAgent

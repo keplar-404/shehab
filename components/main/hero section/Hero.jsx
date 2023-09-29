@@ -37,7 +37,7 @@ export default function Hero() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mailSend = () => {
-    const emailAddress = "shehabhossen76.services@gmail.com"; // Replace with your email address
+    const emailAddress = "shehubhossen@gmail.com"; // Replace with your email address
     if (
       /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
         navigator.userAgent
