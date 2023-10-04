@@ -34,15 +34,14 @@ function Nav() {
 
       <div className={`${display} absolute z-20 overflow-hidden w-full h-full`}>
         <div className=" w-screen h-screen bg-black flex flex-col justify-center items-center text-white gap-y-8 wo font-medium text-[16px]">
-          <a
-            className=""
-            href="https://drive.google.com/file/d/1l6LHxCSBLp5QZUS-A-waMm2y-I_xbzlY/view?usp=sharing"
+          {/* <a
+            href="https://drive.google.com/file/d/1l6LHxCSBLp5QZUS-A-waMm2y-I_xbzlY/view"
             target="_blank"
-          >
+          > */}
             <button className="btn-layout btn-bg-mb transition-all duration-500">
-              Resume
+              Resume sdafs
             </button>
-          </a>
+          {/* </a> */}
           <Image
             src={"./cross1.svg"}
             width={40}

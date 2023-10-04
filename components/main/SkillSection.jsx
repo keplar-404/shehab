@@ -6,17 +6,17 @@ export default function SkillSection() {
   const data = [
     {
       name: "Languages",
-      skill: [
-        "Html",
-        "Css",
-        "Javascript",
-        "Typescript",
-        "Node.js",
-      ],
+      skill: ["Html", "Css", "Javascript", "Typescript", "Node.js"],
     },
     {
       name: "Related Technology",
-      skill: ["Tailwind css", "Bootstrap", "Express", "Mongodb", "React", "Nextjs"],
+      skill: [
+        "Tailwind css",
+        "Bootstrap",
+        "Mongodb",
+        "React",
+        "Nextjs",
+      ],
     },
     {
       name: "Tools",
@@ -27,6 +27,8 @@ export default function SkillSection() {
         "Npm",
         "Yarn",
         "Figma",
+        "Firebase",
+        "Vercel",
       ],
     },
   ];
