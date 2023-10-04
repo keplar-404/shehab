@@ -9,10 +9,11 @@ export default function SkillSection() {
       skill: ["Html", "Css", "Javascript", "Typescript", "Node.js"],
     },
     {
-      name: "Related Technology",
+      name: "Technologies",
       skill: [
         "Tailwind css",
         "Bootstrap",
+        "SASS",
         "Mongodb",
         "React",
         "Nextjs",

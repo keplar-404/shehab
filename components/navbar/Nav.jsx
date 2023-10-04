@@ -8,21 +8,15 @@ function Nav() {
     <>
       <div className={`${display} absolute z-20 overflow-hidden w-full h-full`}>
         <div className=" w-screen h-screen bg-black flex flex-col justify-center items-center text-white gap-y-8 wo font-medium text-[16px]">
-<<<<<<< HEAD
-          {/* <a
-            href="https://drive.google.com/file/d/1l6LHxCSBLp5QZUS-A-waMm2y-I_xbzlY/view"
-=======
-          {/* for mobile */}
+          {/* mobile */}
           <a
-            className=""
-            href="https://drive.google.com/file/d/1l6LHxCSBLp5QZUS-A-waMm2y-I_xbzlY/view?usp=sharing"
->>>>>>> f94ac85cf994c230fb8ebadd60b7a3bd23a22e42
+            href="https://drive.google.com/file/d/1jGIniQs0WmFJPi0GMgs0BJacEYvisrMU/view?usp=sharing"
             target="_blank"
-          > */}
+          >
             <button className="btn-layout btn-bg-mb transition-all duration-500">
-              Resume sdafs
+              Resume
             </button>
-          {/* </a> */}
+          </a>
           <Image
             src={"./cross1.svg"}
             width={40}
@@ -44,7 +38,7 @@ function Nav() {
             {/* for desktop */}
             <a
               target="_blank"
-              href="https://drive.google.com/file/d/1l6LHxCSBLp5QZUS-A-waMm2y-I_xbzlY/view?usp=sharing"
+              href="https://drive.google.com/file/d/1jGIniQs0WmFJPi0GMgs0BJacEYvisrMU/view?usp=sharing"
             >
               <button className="btn-layout btn-bg-lg  transition-all duration-500">
                 Resume
