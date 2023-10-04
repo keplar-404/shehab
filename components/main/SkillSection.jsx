@@ -9,7 +9,7 @@ export default function SkillSection() {
       skill: ["Html", "Css", "Javascript", "Typescript", "Node.js"],
     },
     {
-      name: "Technologies",
+      name: "Tech stack",
       skill: [
         "Tailwind css",
         "Bootstrap",
