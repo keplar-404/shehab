@@ -132,8 +132,8 @@ export default function Hero() {
               transition={{ duration: 1 }}
             >
               <p className="text-black text-center ep sm:text-[32px] md:text-[48px] lg:text-[56px] xl:text-[64px] 2xl:text-[68px] font-[700] sm:leading-[47px] md:leading-[69px]  lg:leading-[83px] tracking-[-0.884px]">
-                Shehab Hossen<span className="wave">👋</span> <br /> Web{" "}
-                <span className="gradient-text">developer</span>
+                Shehab Hossen<span className="wave">👋</span> <br /> Full Stack{" "}
+                <span className="gradient-text">Developer</span>
               </p>
 
               <p className="text-black text-center wo sm:text-[12px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[22px] font-[400] sm:leading-[21px] md:leading-[33px] lg:leading-[33px] tracking-[-0.11px]">
