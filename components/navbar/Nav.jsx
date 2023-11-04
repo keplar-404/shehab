@@ -10,7 +10,7 @@ function Nav() {
         <div className=" w-screen h-screen bg-black flex flex-col justify-center items-center text-white gap-y-8 wo font-medium text-[16px]">
           {/* mobile */}
           <a
-            href="https://drive.google.com/file/d/1jGIniQs0WmFJPi0GMgs0BJacEYvisrMU/view?usp=sharing"
+            href="https://drive.google.com/file/d/1R_3zakPmQOiSC_cPVOlonqUYNPEEbirA/view?usp=sharing"
             target="_blank"
           >
             <button className="btn-layout btn-bg-mb transition-all duration-500">
@@ -38,7 +38,7 @@ function Nav() {
             {/* for desktop */}
             <a
               target="_blank"
-              href="https://drive.google.com/file/d/1jGIniQs0WmFJPi0GMgs0BJacEYvisrMU/view?usp=sharing"
+              href="https://drive.google.com/file/d/1R_3zakPmQOiSC_cPVOlonqUYNPEEbirA/view?usp=sharing"
             >
               <button className="btn-layout btn-bg-lg  transition-all duration-500">
                 Resume
