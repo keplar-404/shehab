@@ -41,7 +41,7 @@ export default function About() {
               About me
             </h1>
             <p className="wo ab-text  sm:w-[76vw] xl:w-[780px] 2xl:w-[940px]   sm:text-[12px] lg:text-[16px] xl:text-[18px]">
-            I'm a self-taught Web Developer with a deep passion for creating exceptional user experiences. Specializing in Front-end development with the MERN stack, I excel at converting Figma designs into pixel-perfect, responsive websites, all while harnessing the power of React. My expertise extends to developing scalable REST APIs using Node.js, Express.js, and MongoDB, seamlessly connecting them with front-end single-page applications. I'm also very comfortable with the Next.js framework and possess a strong foundation in both client and server-side rendering. My commitment to continuous learning and hands-on experience sets me apart. I take pride in my ability to turn design concepts into seamless, efficient web applications.
+           Hi there! I'm a web developer who loves turning code into cool online stuff. I started with basic HTML, then added style with CSS, and made things interactive using JavaScript—like magic! I enjoy solving problems and coming up with new ideas. When I'm not coding, I'm into sci-fi and trying out new recipes. Excited to collaborate and make the web a fun place for everyone!
             </p>
           </div>
 
