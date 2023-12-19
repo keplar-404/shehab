@@ -1,6 +1,19 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+const animationVariant = {
+  initial: {
+    width: "100%",
+  },
+  animate: {
+    width: "0%",
+    transition: { duration: 1 },
+  },
+  viewport: {
+    once: true,
+  },
+};
+
 export default function Project() {
   const projectData = [
     {
@@ -14,6 +27,21 @@ export default function Project() {
       blurImg: "/skillspring1.png",
       demo: "https://skillspring.vercel.app/",
       github: "https://github.com/keplar-404/skillspring",
+    },
+    {
+      id: 4,
+      name: "Pwefact",
+      description:
+        "It is a full stack pet adoption and donation campaign platform where pet owner or individual person can donate or adopted pets.",
+      dev1: "React",
+      dev2: "Node.js",
+      dev4: "Mongodb",
+      dev5: "Firebase",
+      dev5: "MVC architecture",
+      img: "/pewfact.png",
+      blurImg: "/pewfact.png",
+      demo: "https://react-kanban-board-rrbq.onrender.com/",
+      github: "https://github.com/keplar-404/react-kandban-boarde",
     },
     {
       id: 2,
@@ -43,19 +71,6 @@ export default function Project() {
       github: "https://github.com/keplar-404/react-kandban-boarde",
     },
   ];
-
-  const animationVariant = {
-    initial: {
-      width: "100%",
-    },
-    animate: {
-      width: "0%",
-      transition: { duration: 1 },
-    },
-    viewport: {
-      once: true,
-    },
-  };
 
   return (
     <>
@@ -229,7 +244,6 @@ export default function Project() {
                       ) : (
                         ""
                       )}
-
                     </div>
                   </div>
                 </div>
