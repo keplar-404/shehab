@@ -5,7 +5,11 @@ export default function Footer() {
   const socialData = [
     { id: 1, name: "Facebook", link: "https://www.facebook.com/shehub101/" },
     { id: 2, name: "Github", link: "https://github.com/keplar-404" },
-    { id: 4, name: "Linkedin", link: "https://www.linkedin.com/in/shehub-hossen/" },
+    {
+      id: 4,
+      name: "Linkedin",
+      link: "https://www.linkedin.com/in/shehub-hossen/",
+    },
   ];
 
   const repeatDelayFunction = () => {
@@ -68,7 +72,7 @@ export default function Footer() {
       <div className="text-white w-full">
         <div className="pt-[106px] w-full flex flex-col justify-center gap-y-[72px] items-center">
           <h1 className="ep fe sm:text-[33px] md:text-[48px] lg:text-[58px] xl:text-[64px] 2xl:text-[68px] sm:text-center md:text-left">
-            Shehub hossen
+            Thank you
           </h1>
 
           <button
@@ -89,7 +93,12 @@ export default function Footer() {
 
           <div className="flex flex-row justify-center items-center w-full gap-[40px] flex-wrap sm:w-[289px] md:w-[684.633px] lg:w-[899px] xl:w-[1135px] 2xl:w-[1264px] overflow-hidden">
             {socialData.map((data) => (
-              <a href={data.link} target="_blank" key={data.id} className="footer-a hover:text-[#FFAF4B]">
+              <a
+                href={data.link}
+                target="_blank"
+                key={data.id}
+                className="footer-a hover:text-[#FFAF4B]"
+              >
                 {data.name}
               </a>
             ))}
@@ -108,14 +117,23 @@ export default function Footer() {
             <div className="w-full flex justify-center items-center sm:flex-col md:flex-row  sm:h-[350px] md:h-[200px]">
               <div className="flex flex-col justify-center items-center  sm:w-full md:w-1/2 md:h-full sm:border-r-0 md:border-r-[1px] sm:border-black md:border-white">
                 <p className="wo sm:text-[18px] text-[22px] font-normal text-center">
-                shehubhossen@gmail.com
+                  shehubhossen@gmail.com
                 </p>
                 <p className="wo sm:text-[18px] text-[22px] font-normal text-center mt-[14px]">
                   0164-7153119
                 </p>
               </div>
               <div className="sm:w-full md:w-1/2 flex justify-center items-center relative sm:mt-9">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.512798449663!2d90.80551557520998!3d22.96816327921191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3754c24720dd30fd%3A0xd3397543482e3f0!2sDalal%20Bazar!5e0!3m2!1sen!2sbd!4v1695667967792!5m2!1sen!2sbd" width="600" height="450" style={{ border: "0" }} className="rounded-[0.5rem] h-[10rem] w-[60%]" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.512798449663!2d90.80551557520998!3d22.96816327921191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3754c24720dd30fd%3A0xd3397543482e3f0!2sDalal%20Bazar!5e0!3m2!1sen!2sbd!4v1695667967792!5m2!1sen!2sbd"
+                  width="600"
+                  height="450"
+                  style={{ border: "0" }}
+                  className="rounded-[0.5rem] h-[10rem] w-[60%]"
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
           </div>
