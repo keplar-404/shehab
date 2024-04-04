@@ -5,18 +5,15 @@ import { useRef } from "react";
 export default function SkillSection() {
   const data = [
     {
-      name: "Languages",
-      skill: ["Html", "Css", "Javascript", "Typescript", "Node.js"],
-    },
-    {
-      name: "Tech stack",
+      name: "Technical skill",
       skill: [
-        "Tailwind css",
-        "Bootstrap",
-        "SASS",
-        "Mongodb",
+        "Javascript",
+        "Typescript",
         "React",
         "Nextjs",
+        "Node.js",
+        "Tailwind css",
+        "Mongodb",
       ],
     },
     {

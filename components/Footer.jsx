@@ -125,7 +125,7 @@ export default function Footer() {
               </div>
               <div className="sm:w-full md:w-1/2 flex justify-center items-center relative sm:mt-9">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.512798449663!2d90.80551557520998!3d22.96816327921191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3754c24720dd30fd%3A0xd3397543482e3f0!2sDalal%20Bazar!5e0!3m2!1sen!2sbd!4v1695667967792!5m2!1sen!2sbd"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233667.4993073117!2d90.2548763619066!3d23.781067236172145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1712269565092!5m2!1sen!2sbd"
                   width="600"
                   height="450"
                   style={{ border: "0" }}

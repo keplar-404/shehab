@@ -57,19 +57,19 @@ export default function Project() {
       demo: "https://k-ecom-f.vercel.app/",
       github: "https://github.com/keplar-404/nextjs-multivendor-ecommerce",
     },
-    {
-      id: 3,
-      name: "kanban board",
-      description:
-        "A simple interective drag and drop react task management application. Easily move tasks between columns with a drag-and-drop interface.",
-      dev1: "React",
-      dev2: "Dnd-kit",
-      dev3: "Tailwind css",
-      img: "/kanbanBoard.png",
-      blurImg: "/kanbanBoard1.png",
-      demo: "https://react-kanban-board-rrbq.onrender.com/",
-      github: "https://github.com/keplar-404/react-kandban-boarde",
-    },
+    // {
+    //   id: 3,
+    //   name: "kanban board",
+    //   description:
+    //     "A simple interective drag and drop react task management application. Easily move tasks between columns with a drag-and-drop interface.",
+    //   dev1: "React",
+    //   dev2: "Dnd-kit",
+    //   dev3: "Tailwind css",
+    //   img: "/kanbanBoard.png",
+    //   blurImg: "/kanbanBoard1.png",
+    //   demo: "https://react-kanban-board-rrbq.onrender.com/",
+    //   github: "https://github.com/keplar-404/react-kandban-boarde",
+    // },
   ];
 
   return (
