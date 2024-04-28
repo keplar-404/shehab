@@ -40,8 +40,8 @@ export default function Project() {
       dev5: "MVC architecture",
       img: "/pewfact.png",
       blurImg: "/pewfact.png",
-      demo: "https://react-kanban-board-rrbq.onrender.com/",
-      github: "https://github.com/keplar-404/react-kandban-boarde",
+      demo:"https://pet-adoption-donation-frontend.onrender.com/",
+      github: "https://github.com/keplar-404/ph12-frontend",
     },
     {
       id: 2,
