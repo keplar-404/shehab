@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
 
 export default function Footer() {
-  const data = ["Facebook", "Github", "Showwcase", "Linkedin"];
   const socialData = [
-    { id: 1, name: "Facebook", link: "https://www.facebook.com/shehub101/" },
     { id: 2, name: "Github", link: "https://github.com/keplar-404" },
     {
       id: 4,
@@ -79,7 +77,7 @@ export default function Footer() {
             onClick={mailSend}
             className="footer-btn hover:translate-y-[-8px] transition-all duration-500 ap footer-text sm:w-[248px] sm:h-[72px]  md:w-[552px] md:h-[116px] sm:rounded-[14px] md:rounded-[24px] border-[1px] border-white sm:text-[16px] md:text-[28px]"
           >
-            Hire me
+            Let&apos;s grab a coffee ☕
           </button>
           <div className="w-full relative h-[2px] flex justify-start overflow-hidden">
             <div className="w-full h-[2px] bg-white"></div>

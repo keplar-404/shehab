@@ -18,58 +18,73 @@ export default function Project() {
   const projectData = [
     {
       id: 1,
-      name: "SkillSpring",
-      description:
-        "Landing page of an e-learning platform. A web application where the learning process becomes effortless with the aid of an AI platform.",
-      dev1: "Nextjs",
-      dev2: "Tailwind css",
-      img: "/skillspring.png",
-      blurImg: "/skillspring1.png",
-      demo: "https://skillspring.vercel.app/",
-      github: "https://github.com/keplar-404/skillspring",
-    },
-    {
-      id: 4,
-      name: "Pwefact",
-      description:
-        "It is a full stack pet adoption and donation campaign platform where pet owner or individual person can donate or adopted pets.",
-      dev1: "React",
-      dev2: "Node.js",
-      dev4: "Mongodb",
-      dev5: "Firebase",
-      dev5: "MVC architecture",
-      img: "/pewfact.png",
-      blurImg: "/pewfact.png",
-      demo:"https://pet-adoption-donation-frontend.onrender.com/",
-      github: "https://github.com/keplar-404/ph12-frontend",
+      name: "ACE-STEP-1.5 — Cloud Version",
+      bullets: [
+        "Built a cloud-optimized version of LLM API with one-command setup, removing unnecessary code and fixing MLX-related issues — improving stability and inference performance by ~25%.",
+        "Developed a Python FastAPI-based inference API with optimized VRAM model loading/unloading, improving response efficiency by ~35% and enabling efficient cloud usage.",
+      ],
+      dev1: "Python",
+      dev2: "FastAPI",
+      dev3: "Transformer",
+      dev4: "Diffusion Model",
+      img: "/acestep.png",
+      github: "https://github.com/keplar-404/ace-step1.5-for-cloud-deployment",
     },
     {
       id: 2,
-      name: "k.ecom",
-      description:
-        "A full stack multi vendor e-commerce platform. Full features and fuctionality based plactform for seller, buyer, admin,",
-      dev1: "Nextjs",
-      dev2: "Nodejs",
-      dev3: "Mongodb",
-      dev5: "Firebase",
-      img: "/k.com.png",
-      blurImg: "/k.com1.png",
-      demo: "https://k-ecom-f.vercel.app/",
-      github: "https://github.com/keplar-404/nextjs-multivendor-ecommerce",
+      name: "React Timeline Editor",
+      bullets: [
+        "Forked an open-source project and extended it with custom features. Built custom React type-oriented components to enhance functionality.",
+        "Upgrading the project to React 19 with the new compiler for improved performance and modern features.",
+      ],
+      dev1: "React 19",
+      dev2: "TypeScript",
+      dev3: "Interaction.js",
+      dev4: "Open Source",
+      img: "/react-timeline-editor.png",
+      demo: "https://react-timeline-editor-flax.vercel.app/",
+      github: "https://github.com/keplar-404/react-timeline-editor",
     },
-    // {
-    //   id: 3,
-    //   name: "kanban board",
-    //   description:
-    //     "A simple interective drag and drop react task management application. Easily move tasks between columns with a drag-and-drop interface.",
-    //   dev1: "React",
-    //   dev2: "Dnd-kit",
-    //   dev3: "Tailwind css",
-    //   img: "/kanbanBoard.png",
-    //   blurImg: "/kanbanBoard1.png",
-    //   demo: "https://react-kanban-board-rrbq.onrender.com/",
-    //   github: "https://github.com/keplar-404/react-kandban-boarde",
-    // },
+    {
+      id: 3,
+      name: "VermelVibe",
+      bullets: [
+        "Built a fully custom Shopify storefront from the ground up using Liquid templating and custom JavaScript.",
+        "Implemented bespoke UI components, dynamic sections, and performance-optimized assets for a premium e-commerce experience.",
+      ],
+      dev1: "Shopify",
+      dev2: "React",
+      dev3: "Storefront API",
+      dev4: "GraphQL",
+      img: "/vermil.png",
+      demo: "https://vermeilvibe.com/",
+    },
+    {
+      id: 4,
+      name: "Akadam",
+      bullets: [
+        "Developed a custom Shopify theme tailored to the brand's identity, with fully responsive design and custom section schemas.",
+        "Extended theme functionality with custom Liquid blocks, metafield integrations, and optimized storefront performance.",
+      ],
+      dev1: "Shopify",
+      dev2: "Liquid",
+      dev3: "JavaScript / CSS",
+      img: "/akadam.png",
+      demo: "https://www.akadam.ch/",
+    },
+    {
+      id: 5,
+      name: "Dadday",
+      bullets: [
+        "Designed and developed a custom Shopify theme with a focus on clean aesthetics and conversion-optimized layouts.",
+        "Built reusable custom sections and blocks with flexible schema settings for easy content management by the client.",
+      ],
+      dev1: "Shopify",
+      dev2: "Liquid",
+      dev3: "JavaScript / CSS",
+      img: "/dadday.png",
+      demo: "https://www.dadday.co/",
+    },
   ];
 
   return (
@@ -88,58 +103,69 @@ export default function Project() {
                   key={data.id}
                   className="w-full flex flex-col gap-y-[54px]"
                 >
-                  <div className="w-full bg-[#D9D9D9] rounded-[5px] flex justify-center items-baseline">
-                    <Image
-                      src={data.img}
-                      width={896}
-                      height={615}
-                      placeholder="blur"
-                      alt="img"
-                      // quality={100}
-                      blurDataURL={data.blurImg}
-                      className="mt-[56px] rounded-t-[0.3125rem] h-auto sm:w-[234px] md:w-[586.393px] lg:w-[770px] xl:w-[896px] "
-                    />
+                  {/* Project image */}
+                  {data.img && (
+                    <div className="w-full bg-[#D9D9D9] rounded-[5px] flex justify-center items-baseline">
+                      <Image
+                        src={data.img}
+                        width={896}
+                        height={615}
+                        alt={data.name}
+                        className="mt-[56px] rounded-t-[0.3125rem] h-auto sm:w-[234px] md:w-[586.393px] lg:w-[770px] xl:w-[896px]"
+                      />
+                    </div>
+                  )}
+
+                  {/* Project text card */}
+                  <div className="w-full border border-white/20 rounded-[5px] px-[32px] py-[40px] flex flex-col gap-y-[20px]">
+                    <div className="w-fit h-fit relative">
+                      <motion.div
+                        initial={animationVariant.initial}
+                        whileInView={animationVariant.animate}
+                        viewport={animationVariant.viewport}
+                        className="w-full h-full absolute bg-black"
+                      ></motion.div>
+                      <h3 className="w-fit h-fit ep font-semibold sm:text-[20px] lg:text-[24px] xl:text-[28px]">
+                        {data.name}
+                      </h3>
+                    </div>
+                    <ul className="flex flex-col gap-y-[12px] list-none">
+                      {data.bullets.map((bullet, i) => (
+                        <motion.li
+                          key={i}
+                          initial={{ opacity: 0, x: -16 }}
+                          whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5, delay: i * 0.2 } }}
+                          viewport={{ once: true }}
+                          className="wo font-normal sm:text-[14px] lg:text-[16px] xl:text-[18px] text-[#C8C8C8] flex gap-x-[10px]"
+                        >
+                          <span className="text-white mt-[2px]">—</span>
+                          <span>{bullet}</span>
+                        </motion.li>
+                      ))}
+                    </ul>
                   </div>
-                  <div className="flex sm:flex-col  sm:gap-y-[29px] md:gap-y-0  md:flex-row justify-between">
+
+                  {/* Bottom row: links + tech stack */}
+                  <div className="flex sm:flex-col sm:gap-y-[29px] md:gap-y-0 md:flex-row justify-between">
                     <div className="text-left">
-                      <div className="w-fit h-fit relative">
-                        <motion.div
-                          initial={animationVariant.initial}
-                          whileInView={animationVariant.animate}
-                          viewport={animationVariant.viewport}
-                          className="w-full h-full absolute bg-white"
-                        ></motion.div>
-                        <h3 className="w-fit h-fit ep font-semibold sm:text-[20px] lg:text-[22px] xl:text-[26px]">
-                          {data.name}
-                        </h3>
-                      </div>
-                      <div className="w-fit h-fit relative">
-                        <motion.div
-                          initial={animationVariant.initial}
-                          whileInView={animationVariant.animate}
-                          viewport={animationVariant.viewport}
-                          className="w-full h-full absolute bg-white"
-                        ></motion.div>
-                        <p className="wo font-normal mt-[12px] sm:w-full md:w-[353px] lg:w-[461px] sm:text-[16px] md:text-[14px] lg:text-[16px] xl:text-[18px]">
-                          {data.description}
-                        </p>
-                      </div>
-                      <div className="flex flex-row gap-x-[20px] mt-[35px]">
-                        <a href={data.demo} target="_blank">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="42"
-                            height="42"
-                            viewBox="0 0 42 42"
-                            fill="none"
-                            className="cursor-pointer sm:w-[24px] lg:w-[30px] h-auto"
-                          >
-                            <path
-                              d="M30.8684 0C29.9211 0.0526316 28.9737 0.157895 28.0789 0.473684C26.6579 1 25.2895 1.78947 24.1316 2.94737C23.7984 3.15856 23.517 3.44195 23.3081 3.77658C23.0993 4.1112 22.9683 4.4885 22.9249 4.88056C22.8815 5.27263 22.9269 5.66943 23.0575 6.04162C23.1882 6.41382 23.4008 6.75188 23.6797 7.0308C23.9587 7.30973 24.2967 7.52238 24.6689 7.65303C25.0411 7.78368 25.4379 7.82899 25.83 7.78561C26.222 7.74222 26.5993 7.61126 26.934 7.40239C27.2686 7.19353 27.552 6.91211 27.7632 6.57895C28.3421 6 29.0263 5.68421 29.7632 5.42106C31.6053 4.78948 33.8684 5.05263 35.3421 6.57895C37.3947 8.63158 37.3947 12.0526 35.3421 14.1579L27.4474 22.0526C25.1316 24.3684 23.2368 24.579 21.8684 24.5263C20.5 24.4737 19.7105 23.8421 19.7105 23.8421C19.4064 23.6693 19.0712 23.5581 18.7242 23.5149C18.3771 23.4716 18.0249 23.4971 17.6876 23.59C17.3504 23.6829 17.0348 23.8412 16.7588 24.0561C16.4827 24.2709 16.2517 24.538 16.0789 24.8421C15.9062 25.1462 15.795 25.4814 15.7517 25.8285C15.7084 26.1756 15.734 26.5278 15.8268 26.865C15.9197 27.2022 16.0781 27.5179 16.2929 27.7939C16.5077 28.0699 16.7748 28.3009 17.0789 28.4737C17.0789 28.4737 18.8684 29.6316 21.5 29.7895C24.1316 29.9474 27.8158 28.9474 31.0263 25.6842L38.9211 17.7895C43.0263 13.6842 43.0263 7.05264 38.9211 3C37.4474 1.52632 35.7105 0.631579 33.8158 0.210526C32.8684 0 31.8158 0 30.8684 0.0526316V0ZM20.3421 12.1579C17.7105 12.0526 14.0789 12.9474 10.9737 16.1053L3.07895 24C-1.02632 28.1053 -1.02632 34.7369 3.07895 38.7895C6.02632 41.7369 10.2368 42.579 13.9211 41.2632C15.3421 40.7369 16.7105 39.9474 17.8684 38.7895C18.2016 38.5783 18.483 38.2949 18.6919 37.9603C18.9007 37.6257 19.0317 37.2484 19.0751 36.8563C19.1185 36.4642 19.0732 36.0674 18.9425 35.6952C18.8118 35.323 18.5992 34.985 18.3203 34.7061C18.0413 34.4271 17.7033 34.2145 17.3311 34.0838C16.9589 33.9532 16.5621 33.9079 16.17 33.9513C15.778 33.9946 15.4007 34.1256 15.066 34.3345C14.7314 34.5433 14.448 34.8248 14.2368 35.1579C13.6579 35.7369 12.9737 36.0526 12.2368 36.3158C10.3947 36.9474 8.13158 36.6842 6.65789 35.1579C4.60526 33.1053 4.60526 29.6842 6.65789 27.579L14.5526 19.6842C16.6579 17.579 18.5 17.3158 19.9737 17.3684C21.4474 17.4211 22.4474 17.8421 22.4474 17.8421C22.7557 18.0734 23.1111 18.2341 23.4885 18.3129C23.8658 18.3917 24.2558 18.3866 24.6309 18.298C25.0061 18.2095 25.3572 18.0396 25.6594 17.8004C25.9617 17.5612 26.2077 17.2585 26.3801 16.9137C26.5525 16.569 26.647 16.1905 26.657 15.8052C26.667 15.4199 26.5923 15.0371 26.438 14.6838C26.2838 14.3306 26.0538 14.0155 25.7644 13.7609C25.475 13.5064 25.1332 13.3185 24.7632 13.2105C24.7632 13.2105 22.9737 12.1579 20.3421 12.0526V12.1579Z"
-                              fill="white"
-                            />
-                          </svg>
-                        </a>
+                      <div className="flex flex-row gap-x-[20px]">
+                        {data.demo && (
+                          <a href={data.demo} target="_blank">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="42"
+                              height="42"
+                              viewBox="0 0 42 42"
+                              fill="none"
+                              className="cursor-pointer sm:w-[24px] lg:w-[30px] h-auto"
+                            >
+                              <path
+                                d="M30.8684 0C29.9211 0.0526316 28.9737 0.157895 28.0789 0.473684C26.6579 1 25.2895 1.78947 24.1316 2.94737C23.7984 3.15856 23.517 3.44195 23.3081 3.77658C23.0993 4.1112 22.9683 4.4885 22.9249 4.88056C22.8815 5.27263 22.9269 5.66943 23.0575 6.04162C23.1882 6.41382 23.4008 6.75188 23.6797 7.0308C23.9587 7.30973 24.2967 7.52238 24.6689 7.65303C25.0411 7.78368 25.4379 7.82899 25.83 7.78561C26.222 7.74222 26.5993 7.61126 26.934 7.40239C27.2686 7.19353 27.552 6.91211 27.7632 6.57895C28.3421 6 29.0263 5.68421 29.7632 5.42106C31.6053 4.78948 33.8684 5.05263 35.3421 6.57895C37.3947 8.63158 37.3947 12.0526 35.3421 14.1579L27.4474 22.0526C25.1316 24.3684 23.2368 24.579 21.8684 24.5263C20.5 24.4737 19.7105 23.8421 19.7105 23.8421C19.4064 23.6693 19.0712 23.5581 18.7242 23.5149C18.3771 23.4716 18.0249 23.4971 17.6876 23.59C17.3504 23.6829 17.0348 23.8412 16.7588 24.0561C16.4827 24.2709 16.2517 24.538 16.0789 24.8421C15.9062 25.1462 15.795 25.4814 15.7517 25.8285C15.7084 26.1756 15.734 26.5278 15.8268 26.865C15.9197 27.2022 16.0781 27.5179 16.2929 27.7939C16.5077 28.0699 16.7748 28.3009 17.0789 28.4737C17.0789 28.4737 18.8684 29.6316 21.5 29.7895C24.1316 29.9474 27.8158 28.9474 31.0263 25.6842L38.9211 17.7895C43.0263 13.6842 43.0263 7.05264 38.9211 3C37.4474 1.52632 35.7105 0.631579 33.8158 0.210526C32.8684 0 31.8158 0 30.8684 0.0526316V0ZM20.3421 12.1579C17.7105 12.0526 14.0789 12.9474 10.9737 16.1053L3.07895 24C-1.02632 28.1053 -1.02632 34.7369 3.07895 38.7895C6.02632 41.7369 10.2368 42.579 13.9211 41.2632C15.3421 40.7369 16.7105 39.9474 17.8684 38.7895C18.2016 38.5783 18.483 38.2949 18.6919 37.9603C18.9007 37.6257 19.0317 37.2484 19.0751 36.8563C19.1185 36.4642 19.0732 36.0674 18.9425 35.6952C18.8118 35.323 18.5992 34.985 18.3203 34.7061C18.0413 34.4271 17.7033 34.2145 17.3311 34.0838C16.9589 33.9532 16.5621 33.9079 16.17 33.9513C15.778 33.9946 15.4007 34.1256 15.066 34.3345C14.7314 34.5433 14.448 34.8248 14.2368 35.1579C13.6579 35.7369 12.9737 36.0526 12.2368 36.3158C10.3947 36.9474 8.13158 36.6842 6.65789 35.1579C4.60526 33.1053 4.60526 29.6842 6.65789 27.579L14.5526 19.6842C16.6579 17.579 18.5 17.3158 19.9737 17.3684C21.4474 17.4211 22.4474 17.8421 22.4474 17.8421C22.7557 18.0734 23.1111 18.2341 23.4885 18.3129C23.8658 18.3917 24.2558 18.3866 24.6309 18.298C25.0061 18.2095 25.3572 18.0396 25.6594 17.8004C25.9617 17.5612 26.2077 17.2585 26.3801 16.9137C26.5525 16.569 26.647 16.1905 26.657 15.8052C26.667 15.4199 26.5923 15.0371 26.438 14.6838C26.2838 14.3306 26.0538 14.0155 25.7644 13.7609C25.475 13.5064 25.1332 13.3185 24.7632 13.2105C24.7632 13.2105 22.9737 12.1579 20.3421 12.0526V12.1579Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </a>
+                        )}
                         <a href={data.github} target="_blank">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -158,13 +184,13 @@ export default function Project() {
                       </div>
                     </div>
 
-                    <div className="flex flex-row flex-wrap  gap-x-[15px]">
+                    <div className="flex flex-row flex-wrap gap-x-[15px]">
                       <div className="w-fit h-fit relative">
                         <motion.div
                           initial={animationVariant.initial}
                           whileInView={animationVariant.animate}
                           viewport={animationVariant.viewport}
-                          className="w-full h-full absolute bg-white"
+                          className="w-full h-full absolute bg-black"
                         ></motion.div>
                         <p className="ep font-semibold sm:text-[20px] lg:text-[22px] xl:text-[26px]">
                           {data.dev1}
@@ -177,15 +203,14 @@ export default function Project() {
                           initial={animationVariant.initial}
                           whileInView={animationVariant.animate}
                           viewport={animationVariant.viewport}
-                          className="w-full h-full absolute bg-white"
+                          className="w-full h-full absolute bg-black"
                         ></motion.div>
-
                         <p className="ep font-semibold sm:text-[20px] lg:text-[22px] xl:text-[26px]">
                           {data.dev2}
                         </p>
                       </div>
 
-                      {data.dev3 ? (
+                      {data.dev3 && (
                         <>
                           <div className="w-[10px] h-[10px] rounded-full bg-white sm:mt-[9px] lg:mt-[12px] xl:mt-[15px]"></div>
                           <div className="w-fit h-fit relative">
@@ -193,56 +218,13 @@ export default function Project() {
                               initial={animationVariant.initial}
                               whileInView={animationVariant.animate}
                               viewport={animationVariant.viewport}
-                              className="w-full h-full absolute bg-white"
+                              className="w-full h-full absolute bg-black"
                             ></motion.div>
-
                             <p className="ep font-semibold sm:text-[20px] lg:text-[22px] xl:text-[26px]">
                               {data.dev3}
                             </p>
                           </div>
                         </>
-                      ) : (
-                        ""
-                      )}
-
-                      {data.dev4 ? (
-                        <>
-                          <div className="w-[10px] h-[10px] rounded-full bg-white sm:mt-[9px] lg:mt-[12px] xl:mt-[15px]"></div>
-                          <div className="w-fit h-fit relative">
-                            <motion.div
-                              initial={animationVariant.initial}
-                              whileInView={animationVariant.animate}
-                              viewport={animationVariant.viewport}
-                              className="w-full h-full absolute bg-white"
-                            ></motion.div>
-
-                            <p className="ep font-semibold sm:text-[20px] lg:text-[22px] xl:text-[26px]">
-                              {data.dev4}
-                            </p>
-                          </div>
-                        </>
-                      ) : (
-                        ""
-                      )}
-
-                      {data.dev5 ? (
-                        <>
-                          <div className="w-[10px] h-[10px] rounded-full bg-white sm:mt-[9px] lg:mt-[12px] xl:mt-[15px]"></div>
-                          <div className="w-fit h-fit relative">
-                            <motion.div
-                              initial={animationVariant.initial}
-                              whileInView={animationVariant.animate}
-                              viewport={animationVariant.viewport}
-                              className="w-full h-full absolute bg-white"
-                            ></motion.div>
-
-                            <p className="ep font-semibold sm:text-[20px] lg:text-[22px] xl:text-[26px]">
-                              {data.dev5}
-                            </p>
-                          </div>
-                        </>
-                      ) : (
-                        ""
                       )}
                     </div>
                   </div>
