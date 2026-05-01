@@ -138,7 +138,7 @@ export default function Hero() {
 
               <p className="text-black text-center wo sm:text-[12px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[22px] font-[400] sm:leading-[21px] md:leading-[30px] lg:leading-[33px] tracking-[-0.11px]">
                 Software Engineer leading a high-performing team at{" "}
-                <span className="font-semibold">Bdcalling IT</span> — building
+                <span className="font-semibold">SM Technology</span> — building
                 scalable e-commerce &amp; full-stack solutions for global brands.
               </p>
             </motion.div>
