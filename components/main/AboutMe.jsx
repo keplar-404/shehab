@@ -43,7 +43,7 @@ export default function About() {
             <p className="wo ab-text  sm:w-[76vw] xl:w-[780px] 2xl:w-[940px]   sm:text-[12px] lg:text-[16px] xl:text-[18px]">
               I&apos;m Shehab Hossen — a Software Engineer based in Bangladesh,
               currently leading a dev team at{" "}
-              <span className="font-semibold">Bdcalling IT</span> where we build
+              <span className="font-semibold">SM Technology</span> where we build
               high-quality e-commerce and full-stack solutions for international
               clients. I care deeply about clean code, great UX, and shipping
               products that actually make a difference.
